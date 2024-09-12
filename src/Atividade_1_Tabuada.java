@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Atividade_1_Tabuada {
     public static void main(String[] args) {
 
         Scanner num = new Scanner(System.in);
