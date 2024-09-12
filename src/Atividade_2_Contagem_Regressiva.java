@@ -8,14 +8,14 @@ public class Atividade_2_Contagem_Regressiva {
         int num = subtracao.nextInt();
 
         int[] contagem = new int[num];
-        int contador = num;
+        int i = num;
 
         System.out.println("A subtração até 0 do número desejadp é : ");
 
-        while (contador > 0) {
-            System.out.println(contador);
-            contagem[0] = contador;
-            contador--;
+        while (i > 0) {
+            System.out.println(i);
+            contagem[0] = i;
+            i--;
         }
 
     }

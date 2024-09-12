@@ -2,21 +2,27 @@ import java.util.Scanner;
 
 public class Atividade_3_Fatorial {
     public static void main(String[] args) {
-        Scanner fator = new Scanner(System.in);
+        Scanner fatorial = new Scanner(System.in);
 
-
-        System.out.println("Insira o valor do fatorial: ");
-        fator.nextInt();
-        int fatorial = fator.nextInt();
-
-
-
-
+        int numero;
 
         do {
+            System.out.println("Insira um número maior que  zero para saber seu fatorial: ");
+            numero = fatorial.nextInt();
 
-        }while (fatorial != 1);
+            if (numero < 0) {
+                System.out.println("número invalido, insira outro");
+            }
+        } while (numero < 0);
 
+        double resultado = 1;
+        int i = 1;
+
+        do {
+            resultado *= i;
+            i++;
+        } while (i <= numero);
+        System.out.println("O seu número fatorado é " + numero + " e o resultado é: " + resultado);
 
     }
 }
